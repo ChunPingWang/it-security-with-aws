@@ -1,0 +1,17 @@
+{
+  "governedRegions": ["eu-central-1", "eu-west-1"],
+  "organizationStructure": {
+    "security": { "name": "Security" },
+    "sandbox": { "name": "Sandbox" }
+  },
+  "centralizedLogging": {
+    "accountId": "LOG_ARCHIVE_ACCOUNT_ID",
+    "configurations": {
+      "loggingBucket": { "retentionDays": 365 },
+      "accessLoggingBucket": { "retentionDays": 3650 }
+    },
+    "enabled": true
+  },
+  "securityRoles": { "accountId": "AUDIT_ACCOUNT_ID" },
+  "accessManagement": { "enabled": true }
+}
